@@ -2,14 +2,15 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
   const frontendSkills = [
+    "HTML5",
+    "CSS3",
+    "Javascript",
     "React",
-    "Vue",
-    "TypeScript",
     "TailwindCSS",
-    "Svelte",
+    "Bootstrap",
   ];
 
-  const backendSkills = ["Node.js", "Python", "AWS", "MongoDB", "GraphQL"];
+  const backendSkills = ["Node.js", "Python", "MongoDB", "MySQL"];
 
   return (
     <section
@@ -18,7 +19,7 @@ export const About = () => {
     >
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+          <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             {" "}
             About Me
           </h2>
@@ -69,8 +70,8 @@ export const About = () => {
               <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong> B.S. in Computer Science </strong> - XYZ University
-                  (2016-2020)
+                  <strong> B.Tech in Computer Science </strong> - JIS College of Engineering, Kalyani
+                  (2022-2026)
                 </li>
                 <li>
                   Relevant Coursework: Data Structures, Web Development, Cloud
@@ -84,24 +85,23 @@ export const About = () => {
                 <div>
                   <h4 className="font-semibold">
                     {" "}
-                    Software Engineer at ABC Corp (2020 - Present){" "}
+                    Front-End Software Engineering Virtual Internship(April 2025){" "}
                   </h4>
                   <p>
-                    Developed and maintained microservices for cloud-based
-                    applications.
+                    Build a React-based Backpack web app using component architechture and state management.
                   </p>
                 </div>
 
-                <div>
+                {/* <div>
                   <h4 className="font-semibold">
                     {" "}
-                    Intern at DEF Startups (2019){" "}
+                    Intern at XYZ Startup (20KK){" "}
                   </h4>
                   <p>
                     Assisted in building front-end components and integration
                     REST APIs
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

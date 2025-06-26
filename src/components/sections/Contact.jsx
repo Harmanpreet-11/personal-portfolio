@@ -9,16 +9,15 @@ export const Contact = () => {
     message: "",
   });
 
+  const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+  
   const handleSubmit = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        e.target,
-        import.meta.env.VITE_PUBLIC_KEY
-      )
+      .sendForm(serviceID,templateID,e.target,publicKey)
       .then((result) => {
         alert("Message Sent!");
         setFormData({ name: "", email: "", message: "" });
