@@ -13,7 +13,7 @@ export const Home = () => {
           </h1>
 
           <p className="tex-gray-400 text-lg mb-8 max-w-lg mx-auto">
-           Hi, I’m Harmanpreet Singh — a Developer, passionate about turning ideas into reality. From crafting user interfaces to solving backend challenges, I build projects that are impactfull. Always learning. Always building.
+           A Developer, passionate about turning ideas into reality. From crafting user interfaces to solving backend challenges, I build projects that are impactfull. Always learning. Always building.
           </p>
           <div className="flex justify-center space-x-4">
             <a
